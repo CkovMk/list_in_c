@@ -1,18 +1,13 @@
 //
 // Created by 17616 on 2019/9/26.
 //
-#include "list.h"
+
 #ifndef LIST_LIST_CYCLE_H
 #define LIST_LIST_CYCLE_H
+#include "list.h"
 #ifdef __cplusplus
 extern "C" {
 #endif
-#include <stdlib.h>
-#include <stdbool.h>
-#include <assert.h>
-// Library version
-#define LIST_VERSION "0.0.5"
-
 int listc_constructor(list_t *p, unsigned int SizeOfData_);//构造函数
 void listc_destructor(list_t *p);//析构函数
 int listc_empty(list_t *p);//如果list是空的则返回1
